@@ -1,30 +1,29 @@
 # 🩸 Blood Inventory & Tracking System
 
-A web-based Blood Inventory & Tracking System designed to manage blood-bank operations including donors, patients, blood bags, laboratory testing, blood issuance, staff, and hospitals.
+A web-based **Blood Inventory & Tracking System** designed to manage key blood-bank operations including donors, patients, blood bags, laboratory testing, blood issuance, staff, and hospitals.
 
-The system is built using **Python, Streamlit, FastAPI, and Oracle Database** with role-based access control and database-level validation using **PL/SQL triggers**.
+The system is built using **Python, Streamlit, FastAPI, and Oracle Database**, with role-based access control and database-level validation using **PL/SQL triggers**.
 
 ## ✨ Features
 
-- 🩸 Blood inventory management
+- 🩸 Blood inventory and blood bag management
 - 👤 Donor registration and management
 - 🏥 Patient registration and management
-- 🩸 Blood bag tracking
 - 🧪 Laboratory test management
 - 📋 Blood issuance management
 - 👥 Staff management
 - 🏥 Hospital management
-- 🔐 Role-based authentication
-- 📊 Dashboard for monitoring blood inventory and operations
+- 🔐 Role-based authentication and access control
+- 📊 Dashboard for monitoring blood-bank operations
 - ⚡ FastAPI backend
 - 🗄️ Oracle Database integration
 - 🔥 PL/SQL triggers for database-level validation
 
 ## 👥 User Roles
 
-### Staff
+### 👤 Staff
 
-Staff members can access the operational modules required for daily blood-bank activities, including:
+Staff users have access to the operational modules required for daily blood-bank activities, including:
 
 - Donors
 - Patients
@@ -32,7 +31,7 @@ Staff members can access the operational modules required for daily blood-bank a
 - Laboratory Tests
 - Issuances
 
-### System Admin
+### 🔑 System Admin
 
 The System Admin has higher-level administrative access and can manage:
 
@@ -41,7 +40,7 @@ The System Admin has higher-level administrative access and can manage:
 - System administration
 - Operational modules
 
-This role-based structure helps restrict sensitive administrative operations.
+The role-based structure helps restrict sensitive administrative operations to authorized users.
 
 ## 🛠️ Technology Stack
 
@@ -66,25 +65,27 @@ This role-based structure helps restrict sensitive administrative operations.
 | `auth.py` | Authentication and login functionality |
 | `db_config.py` | Oracle database connection configuration |
 | `requirements.txt` | Python project dependencies |
-| `.gitignore` | Prevents sensitive/local files from being committed |
-| `.env` | Local database/environment configuration |
+| `.gitignore` | Prevents sensitive and local files from being committed |
+| `.env` | Local database and environment configuration |
+
+> **Note:** `.env` is used locally and is intentionally excluded from the Git repository.
 
 ## ⚙️ Installation
 
-### 1. Clone the repository
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/Vansh0036/Blood-inventory-and-tracking-system.git
 cd Blood-inventory-and-tracking-system
 ```
 
-### 2. Create a virtual environment
+### 2. Create a Virtual Environment
 
 ```bash
 python -m venv venv
 ```
 
-### 3. Activate the virtual environment
+### 3. Activate the Virtual Environment
 
 **Windows:**
 
@@ -92,15 +93,15 @@ python -m venv venv
 venv\Scripts\activate
 ```
 
-### 4. Install dependencies
+### 4. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## 🔧 Environment Configuration
+## 🔐 Environment Configuration
 
-Create a `.env` file in the project directory and add your Oracle database configuration.
+Create a `.env` file in the project directory and configure your Oracle database connection.
 
 Example:
 
@@ -113,6 +114,8 @@ ORACLE_DSN=your_database_dsn
 **Do not commit real database credentials to GitHub.**
 
 ## ▶️ Running the Application
+
+The application consists of a **FastAPI backend** and a **Streamlit frontend**.
 
 ### Start the FastAPI Backend
 
@@ -134,7 +137,7 @@ The application will open in your browser.
 
 ## 🖥️ Application Modules
 
-The system provides separate views for:
+The system provides separate views/modules for:
 
 1. Login
 2. Dashboard Overview
@@ -147,7 +150,7 @@ The system provides separate views for:
 9. Hospital Management
 10. System Administration
 
-## 🖥️ Application Screenshots
+## 🖼️ Application Screenshots
 
 ### 🏠 Home Page
 
@@ -176,6 +179,7 @@ The system provides separate views for:
 ### 🏥 Patient Management
 
 ![Patient Management](patient-management.png)
+
 ## 🗄️ Database
 
 The application uses **Oracle Database** as the backend database.
@@ -198,7 +202,7 @@ Database functionality includes:
 
 ## 🎯 Project Objective
 
-The main objective of this project is to provide a centralized system for managing blood-bank operations efficiently while improving:
+The objective of this project is to provide a centralized system for managing blood-bank operations while improving:
 
 - Blood inventory tracking
 - Donor and patient management
