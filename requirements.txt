@@ -1,0 +1,7 @@
+streamlit
+requests
+pandas
+fastapi
+oracledb
+python-dotenv
+uvicorn
