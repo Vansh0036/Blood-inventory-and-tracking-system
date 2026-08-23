@@ -147,6 +147,35 @@ The system provides separate views for:
 9. Hospital Management
 10. System Administration
 
+## 🖥️ Application Screenshots
+
+### 🏠 Home Page
+
+![Home Page](home-page.png)
+
+### 🔐 Staff Login
+
+![Staff Login](staff-login.png)
+
+### 👤 Staff Dashboard
+
+![Staff Dashboard](staff-dashboard.png)
+
+### 🔑 System Admin Login
+
+![System Admin Login](admin-login.png)
+
+### 📊 Admin Dashboard
+
+![Admin Dashboard](admin-dashboard.png)
+
+### 🩸 Donor Management
+
+![Donor Management](donor-management.png)
+
+### 🏥 Patient Management
+
+![Patient Management](patient-management.png)
 ## 🗄️ Database
 
 The application uses **Oracle Database** as the backend database.
